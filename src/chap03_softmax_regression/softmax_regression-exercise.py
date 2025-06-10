@@ -172,6 +172,9 @@ y = np.array(y, dtype=np.int32)
 for i in range(1000):
     loss, accuracy = train_one_step(model, opt, x, y)
     if i % 50 == 49:
+        # 格式化输出：
+        #   loss: 保留4位有效数字
+        #   accuracy: 保留4位有效数字
         print(f"loss: {loss.numpy():.4}\t accuracy: {accuracy.numpy():.4}")
 # 执行 1000 次迭代的模型训练，并每隔 50 步打印损失和准确率
 
