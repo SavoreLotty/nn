@@ -3,7 +3,9 @@
 
 # # Tensorflow2.0 小练习
 
+# 导入TensorFlow库 - 用于构建和训练深度学习模型
 import tensorflow as tf
+
 import numpy as np
 
 # ## 实现softmax函数
