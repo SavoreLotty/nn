@@ -85,7 +85,8 @@ def compute_loss(logits, labels):
     """
     return tf.reduce_mean(
         tf.nn.sparse_softmax_cross_entropy_with_logits(
-            logits=logits, labels=labels
+            logits=logits, # 模型原始输出
+            labels=labels  # 真实类别标签（整数形式）
         )
     )
 
