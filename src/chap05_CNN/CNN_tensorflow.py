@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 # In[ ]:
-import tensorflow as tf
+import tensorflow as tf # 导入TensorFlow深度学习框架
 from tensorflow.examples.tutorials.mnist import input_data
 #使用input_data.read_data_sets函数加载MNIST数据集，'MNIST_data'是数据集存储的目录路径，one_hot=True表示将标签转换为one-hot编码格式
 
