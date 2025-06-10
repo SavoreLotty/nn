@@ -16,9 +16,12 @@ print("第二题：\n")
 # 形状：a.shape = (3,)，表示包含3个元素的一维数组     
 a = np.array([4, 5, 6])
 
-print("(1) 输出 a 的类型（type）\n", type(a))
-print("(2) 输出 a 的各维度的大小（shape）\n", a.shape)
-print("(3) 输出 a 的第一个元素（element）\n", a[0])
+print("(1) 输出 a 的类型（type）")
+print(type(a))
+print("\n(2) 输出 a 的各维度的大小（shape）")
+print(a.shape)
+print("\n(3) 输出 a 的第一个元素（element）")
+print(a[0])
 # 使用 array() 函数创建数组，函数可基于序列型的对象。创建了一个一维数组 a，并输出其类型（numpy.ndarray）、形状（(3,)） 和第一个元素（4）。
 
 # 3. 建立一个二维数组 b, 初始化为 [ [4, 5, 6], [1, 2, 3]] (1) 输出二维数组 b 的形状（shape）（输出值为（2,3））(2) 输出 b(0,0)，b(0,1),b(1,1) 这三个元素（对应值分别为 4,5,2）
