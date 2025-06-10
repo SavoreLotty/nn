@@ -64,10 +64,22 @@ class SVM:
                 continue
 
             # 计算梯度
-            # L2正则化项 + 错误分类样本的平均梯度
-            dw = (2 * self.reg_lambda * self.w) - np.mean(y[idx].reshape(-1, 1) * X[idx], axis = 0)
-            db = -np.mean(y[idx])
+            # 正则化项梯度
+           dw_reg = 2 * self.reg_lambda * self.w 
+        
+           # 损失项梯度（仅对违反间隔的样本计算）
+            dw_loss = np.zeros(n)
+            db_loss = 0
+            if len(idx) > 0:
+                
+                # 计算损失项的梯度（对所有违反样本求和）         
+                dw_loss = -np.sum(y[idx].reshape(-1, 1) * X[idx], axis=0) / m
+                db_loss = -np.sum(y[idx]) / m
 
+            # 总梯度 = 正则化项 + 损失项
+            dw = dw_reg + dw_loss
+            db = db_loss
+        
             # 参数更新
             self.w -= self.learning_rate * dw
             self.b -= self.learning_rate * db
