@@ -192,7 +192,7 @@ if __name__ == '__main__':
    animation_frames = []
 
     for i in range(200):
-        # 执行一次训练步骤，返回损失、准确率、当前的权重 W 和偏置 b
+        # 执行一次训练步骤，返回当前训练状态
         # loss: 当前损失值
         # accuracy: 当前准确率
         # W_opt: 当前权重矩阵
