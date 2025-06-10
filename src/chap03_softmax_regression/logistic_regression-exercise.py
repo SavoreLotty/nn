@@ -193,6 +193,10 @@ if __name__ == '__main__':
 
     for i in range(200):
         # 执行一次训练步骤，返回损失、准确率、当前的权重 W 和偏置 b
+        # loss: 当前损失值
+        # accuracy: 当前准确率
+        # W_opt: 当前权重矩阵
+        # b_opt: 当前偏置值
         loss, accuracy, W_opt, b_opt = train_one_step(model, opt, x, y)
         # 将当前的权重W的第一个元素、第二个元素、偏置b和损失值添加到animation_frames中
         animation_frames.append(
