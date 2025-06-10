@@ -5,6 +5,8 @@ import numpy as np # 导入NumPy科学计算库，使用标准别名np
 
 import matplotlib.pyplot as plt # 导入Matplotlib的pyplot模块并命名为plt
 # 用于创建各种静态、交互式和动画可视化图表
+# 从Keras导入常用模块
+from tensorflow.keras import optimizers, layers, Model
 
 # 下面这段代码从文件中读取数据，然后把数据拆分成特征和标签，最后以 NumPy 数组的形式返回
 def load_data(filename):
