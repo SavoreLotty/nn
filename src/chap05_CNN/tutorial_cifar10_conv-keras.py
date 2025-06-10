@@ -15,7 +15,7 @@ import os
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers, optimizers, datasets
-from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.layers import Dense, Dropout, Flatten # 导入常用网络层：全连接层、随机失活层和平坦层
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
 import numpy
 import pylab
