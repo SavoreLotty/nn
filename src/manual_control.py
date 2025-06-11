@@ -18,41 +18,48 @@ Welcome to CARLA manual control.
 
 Use ARROWS or WASD keys for control.
 
+#基础车辆控制
     W            : throttle
     S            : brake
     A/D          : steer left/right
     Q            : toggle reverse
     Space        : hand-brake
+    
+#变速箱控制
     P            : toggle autopilot
     M            : toggle manual transmission
     ,/.          : gear up/down
     CTRL + W     : toggle constant velocity mode at 60 km/h
-
+    
+#灯光系统
     L            : toggle next light type
     SHIFT + L    : toggle high beam
     Z/X          : toggle right/left blinker
     I            : toggle interior light
-
+    
+#传感器操作
     TAB          : change sensor position
     ` or N       : next sensor
     [1-9]        : change to sensor [1-9]
     G            : toggle radar visualization
+    
+#环境控制
     C            : change weather (Shift+C reverse)
     Backspace    : change vehicle
-
     O            : open/close all doors of vehicle
     T            : toggle vehicle's telemetry
-
+    
+#地图图层操作
     V            : Select next map layer (Shift+V reverse)
     B            : Load current selected map layer (Shift+B to unload)
-
+    
+#数据记录
     R            : toggle recording images to disk
-
     CTRL + R     : toggle recording of simulation (replacing any previous)
     CTRL + P     : start replaying last recorded simulation
     CTRL + +     : increments the start time of the replay by 1 second (+SHIFT = 10 seconds)
     CTRL + -     : decrements the start time of the replay by 1 second (+SHIFT = 10 seconds)
-
+#界面控制
     F1           : toggle HUD
     H/?          : toggle help
     ESC          : quit
