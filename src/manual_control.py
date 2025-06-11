@@ -18,44 +18,44 @@ Welcome to CARLA manual control.
 
 Use ARROWS or WASD keys for control.
 
-    W            : throttle
-    S            : brake
-    A/D          : steer left/right
-    Q            : toggle reverse
-    Space        : hand-brake
-    P            : toggle autopilot
-    M            : toggle manual transmission
-    ,/.          : gear up/down
-    CTRL + W     : toggle constant velocity mode at 60 km/h
+    W            : throttle 油门加速
+    S            : brake 刹车减速
+    A/D          : steer left/right 左转/右转
+    Q            : toggle reverse 切换倒车模式
+    Space        : hand-brake 手刹
+    P            : toggle autopilot 切换自动驾驶模式
+    M            : toggle manual transmission 切换手动/自动变速箱模式
+    ,/.          : gear up/down 手动模式下 - 升档/降档
+    CTRL + W     : toggle constant velocity mode at 60 km/h 开启60km/h定速巡航模式
 
-    L            : toggle next light type
-    SHIFT + L    : toggle high beam
-    Z/X          : toggle right/left blinker
-    I            : toggle interior light
+    L            : toggle next light type 切换车灯类型
+    SHIFT + L    : toggle high beam 切换远光灯
+    Z/X          : toggle right/left blinker 开启/关闭右转向灯/左转向灯
+    I            : toggle interior light 切换车内照明灯
 
-    TAB          : change sensor position
-    ` or N       : next sensor
-    [1-9]        : change to sensor [1-9]
-    G            : toggle radar visualization
-    C            : change weather (Shift+C reverse)
-    Backspace    : change vehicle
+    TAB          : change sensor position 改变传感器安装位置
+    ` or N       : next sensor 切换到下一个传感器
+    [1-9]        : change to sensor [1-9] 直接选择传感器1-9
+    G            : toggle radar visualization 切换雷达可视化显示
+    C            : change weather (Shift+C reverse) 切换天气
+    Backspace    : change vehicle 更换当前控制的车辆
 
-    O            : open/close all doors of vehicle
-    T            : toggle vehicle's telemetry
+    O            : open/close all doors of vehicle 打开/关闭车辆所有车门
+    T            : toggle vehicle's telemetry 切换车辆遥测数据显示
 
-    V            : Select next map layer (Shift+V reverse)
-    B            : Load current selected map layer (Shift+B to unload)
+    V            : Select next map layer (Shift+V reverse) 选择下一个地图层（Shift+V 反向选择）
+    B            : Load current selected map layer (Shift+B to unload) 加载当前选中的地图层（Shift+B 卸载）
 
-    R            : toggle recording images to disk
+    R            : toggle recording images to disk 切换图像保存到磁盘（摄像头画面）
 
-    CTRL + R     : toggle recording of simulation (replacing any previous)
-    CTRL + P     : start replaying last recorded simulation
-    CTRL + +     : increments the start time of the replay by 1 second (+SHIFT = 10 seconds)
-    CTRL + -     : decrements the start time of the replay by 1 second (+SHIFT = 10 seconds)
+    CTRL + R     : toggle recording of simulation (replacing any previous) 开始/停止录制仿真过程（覆盖之前记录）
+    CTRL + P     : start replaying last recorded simulation 回放上次录制的仿真
+    CTRL + +     : increments the start time of the replay by 1 second (+SHIFT = 10 seconds) 回放起始时间增加1秒（+SHIFT = 10秒）
+    CTRL + -     : decrements the start time of the replay by 1 second (+SHIFT = 10 seconds) 回放起始时间减少1秒（+SHIFT = 10秒）
 
-    F1           : toggle HUD
-    H/?          : toggle help
-    ESC          : quit
+    F1           : toggle HUD 切换HUD显示（抬头显示器）
+    H/?          : toggle help 显示/隐藏帮助信息
+    ESC          : quit 退出程序
 """
 
 from __future__ import print_function
