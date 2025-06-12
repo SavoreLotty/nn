@@ -11,7 +11,7 @@
 # In[1]:
 
 # 导入运行所需模块
-import tensorflow as tf
+import tensorflow as tf  # 创建静态图表和可视化
 import matplotlib.pyplot as plt
 from matplotlib import animation, rc
 from IPython.display import HTML # 在Jupyter中显示动画
