@@ -58,7 +58,7 @@ Use ARROWS or WASD keys for control.
     ESC          : quit
 """
 
-from __future__ import print_function
+from __future__ import print_function # 从__future__模块导入print_function特性
 
 
 # ==============================================================================
